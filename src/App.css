@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  background-color:aquamarine;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.todolist{
+  border: 1px solid;
+  flex:1;
+  overflow-y: auto;
+  background-color: #1E2023;
 }
 
 .App-logo {

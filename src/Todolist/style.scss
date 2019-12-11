@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background-color: black;
+}
+
+.item{
+    // background-color: #8a2be2;
+    // border:1px solid rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    color:rgba(255,255,255,0.7);
+    &>div:first-child{
+        padding: 0.8rem;
+        display: flex;
+        align-items: center;
+    }
+    &>div:last-child{
+        padding: 0.8rem;
+        flex:1;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+
+    }
+}
+
+.itemcompleted{
+    background-color:brown;
+    text-decoration: line-through;
+
+}
+
+    .header {
+        // border: 1px solid whitesmoke ;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding: 0 1rem;
+        border: 1px solid;
+        color: #FED509;
+
+        .heading{
+        font-size: 3rem;
+        font-weight: 400;
+        }
+        
+        .AddTodo{
+        font-size: 2rem;
+        cursor: pointer;
+        }   
+    
+    }
+    
+
+input[type='text']{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 100%;
+        padding: 0.8rem 3rem;
+
+        :focus{
+            border-bottom: 2px solid red;
+        }
+}
+
+.delete{
+    // padding: 0.6rem;
+    cursor: pointer;
+}
+
+.radio-btn{
+    display: flex;
+    position: absolute;
+    // top: 30rem;
+}
