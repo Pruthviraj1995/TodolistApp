@@ -11,6 +11,8 @@
     display: flex;
     justify-content: space-between;
     color:rgba(255,255,255,0.7);
+    cursor: pointer;
+    
     &>div:first-child{
         padding: 0.8rem;
         display: flex;
@@ -22,14 +24,21 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(255,255,255,0.12);
 
     }
 }
 
 .itemcompleted{
-    background-color:brown;
-    text-decoration: line-through;
+    background-color:rgba(0,0,0,0.3);
+    color:rgba(255,255,255,0.28);
+    &>div:last-child{
+        &>span:first-child{
+            text-decoration: line-through;
+
+        }
+    }
+
 
 }
 
@@ -70,6 +79,7 @@ input[type='text']{
 .delete{
     // padding: 0.6rem;
     cursor: pointer;
+    height: 0.8rem;
 }
 
 .radio-btn{

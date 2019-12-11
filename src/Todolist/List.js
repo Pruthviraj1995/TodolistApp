@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './style.scss';
-
+import delicn from '../deletelogo.svg'
 const List = (props) => {
     const handledelete = (e) => {
         e.stopPropagation();
@@ -14,7 +14,7 @@ const List = (props) => {
             </div>
             <div>
                 <span className='label'>{props.label}</span>
-                <span className='delete' onClick={handledelete}>X</span>
+                <img src={delicn} alt="" onClick={handledelete} className="delete"/>
             </div>
         </div>
     )
