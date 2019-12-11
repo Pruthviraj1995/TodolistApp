@@ -29,6 +29,14 @@
     border:1px solid rgba(0,0,0,0.3);
     display: flex;
 }
+
+.itemcompleted{
+    background-color:brown;
+    text-decoration: line-through;
+    padding: 0.8rem 3rem;
+    border:1px solid rgba(0,0,0,0.3);
+    display: flex;
+}
     
 
 input[type='text']{

@@ -23,12 +23,26 @@ function App() {
     ]);
   }
 
+  const toggleCompleted=(id)=>{
+    var indx=todos.findIndex(el=>el.id==id);
+
+    var newTodo=[
+      ...todos.slice(0,indx),
+      {
+        ...todos[indx],
+        completed:!todos[indx].completed
+      },
+      ...todos.slice(indx+1)
+    ]
+
+    setTodos(newTodo);
+  }
 
   return (
     <div className="App">
       <div className='todolist'>
         <Header handleNew={setNew} />
-        <ListItems data={todos}/>
+        <ListItems data={todos} handleToggle={toggleCompleted} />
         {
           showNew &&
           <NewItem text={text} setText={setText} handleNewTodo={handleNewTodo} />

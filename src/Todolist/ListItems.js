@@ -1,12 +1,12 @@
 import React from 'react';
 import List from './List';
 
-const ListItems = (props) =>{
+const ListItems = ({data,handleToggle}) =>{
 
     return( 
         <div>
-        {props.data.map((todo) => (
-        <div>
+        {data.map((todo) => (
+        <div onClick={()=>handleToggle(todo.id)}>
             <List key={todo} {...todo}/>
         </div>
        ))}
