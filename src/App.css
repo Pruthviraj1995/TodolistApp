@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.todolist{
+  flex:1;
+  overflow-y: auto;
+  border: 1px solid;
 }
 
 .App-logo {

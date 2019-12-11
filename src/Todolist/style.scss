@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border: 1px solid;
+
+    .heading{
+    font-size: 3rem;
+    font-weight: 400;
+    }
+        
+    .AddTodo{
+    font-size: 2rem;
+    cursor: pointer;
+    }   
+
+}
+
+.item{
+    background-color: #8a2be2;
+    padding: 0.8rem 3rem;
+    border:1px solid rgba(0,0,0,0.3);
+    display: flex;
+}
+    
+
+input[type='text']{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 100%;
+        padding: 0.8rem 3rem;
+
+        :focus{
+            border-bottom: 2px solid red;
+        }
+}
